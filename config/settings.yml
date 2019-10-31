@@ -1,22 +1,12 @@
 # Header details
-organisation_name: Digital Shared Services
-team_name: Enterprise and Solution Architecture Team
+organisation_name: NICS Digital Shared Services
+team_name: Enterprise and Solution Architecture
 
 # Links to show on right-hand-side of header
 header_links:
-  About: /
-  Blog: /blog/
-  Catalogue: /catalogue/
-  Support: /support/
+  NICS EA Principles: https://nics-ea-principles.london.cloudapps.digital
+  #Citizen Services Architecture: https://docs.ea.digitalni.gov.uk
+  GitHub: https://github.com/dof-dss/architecture-blog
 
 # Blog title
-blog_title: Architecture Team Blog
-
-# Catalogue product page URLs
-catalogue:
-  api_management_product_page: https://api-management-product-page.london.cloudapps.digital
-  usage_tracking_product_page:
-  doc_config_product_page: https://document-config.london.cloudapps.digital
-  audit_service_product_page:
-  customer_identity_hub_product_page:
-  employee_identity_hub_product_page:
+blog_title: Enterprise and Solution Architecture Team

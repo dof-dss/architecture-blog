@@ -1,101 +1,71 @@
 ---
-title: About
+title: Digital Shared Services
 ---
 
-<div class="masthead govuk-!-margin-bottom-2">
-  <div class="hero">
-    <div class="hero__content">
-      <div class="hero__body">
-        <h1 class="hero__title">Design and build digital services for government</h1>
-        <div class="hero__inline-image">
-          <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
-        </div>
-        <p class="hero__description">
-          Focus on delivering real business value, not re-inventing the wheel.
-        </p>
-        <a href="/catalogue" role="button" draggable="false" class="govuk-button govuk-button--start app-button--inverted" data-module="govuk-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
-          View our service catalogue
-          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-          </svg>
-        </a>
-        <span class="hero-alternative-action">
-          or <a class="govuk-link" href="/support" data-click-events data-click-category="Hero" data-click-action="Internal link clicked">contact us</a> to find out more before you build your next digital service.
-        </span>
-        <!-- <p class="hero__paragraph">Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p> -->
-      </div>
-      <%# <div class="hero__aside-image">
-        <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
-      </div> %>
-    </div>
+<div class="govuk-width-container product-page-!-border-bottom">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        <a class="govuk-breadcrumbs__list-item">Architecture Team</a>
+      </li>
+    </ol>
   </div>
 </div>
 
 <main class="govuk-main-wrapper" id="main-content" role="main">
   <div class="govuk-width-container">
-    <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-4">
-      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
-        <h2 class="govuk-heading-l govuk-!-margin-bottom-3">
-          Build applications faster using common platforms and components
-        </h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <%= partial "partials/blog_title" %>
+        <% blog.articles[0...5].each do |article| %>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+          <article>
+            <h2 class="govuk-heading-m">
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h2>
+
+            <section class="content-section">
+              <img src="<%= article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4">
+            </section>
+
+            <div class="govuk-body">
+              <span class="govuk-visually-hidden">Posted on: </span>
+              <time>
+                <span class="posted-on"><%= article.date.strftime('%d %B %Y') %></span>
+              </time>
+              -
+              <span class="govuk-visually-hidden">Category: </span>
+              <%= article.data.category %>
+            </div>
+
+            <div class="govuk-body">
+              <%= article.summary %>
+            </div>
+
+            <a href="<%= article.url %>" class="govuk-link">Read more</a>
+          </article>
+        <% end %>
+      </div>
+      <div class="govuk-grid-column-one-third govuk-!-padding-left-3">
+        <!--
+        <h1 class="govuk-heading-l">Tags</h1>
+        <ul>
+          <% blog.tags.each do |tag, articles| %>
+            <li>
+              <h5><%= tag %></h5>
+              <ul>
+                <% articles.each do |article| %>
+                  <li><a href="<%= article.url %>"><%= article.title %></a></li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        </ul>
+        -->
+        <h4 class="govuk-heading-s">Other content</h1>
         <p class="govuk-body">
-          Our services provide the common capabilities required by many Government services. This allows you to concentrate on meeting the specific business requirements of your customer.
-        </p>
-        <p class="govuk-body">
-          <a class="govuk-link" href="/catalogue">
-            See the full list of our services
-          </a>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-    </div>
-
-    <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-4">
-      <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-4">
-        <h2 class="govuk-heading-l govuk-!-margin-bottom-2">Ensure consistency, alignment and compliance</h2>
-        <p class="govuk-body">
-          Using our services and following our guidance will ensure that your solution provides a consistent experience to your customers that meets Government standards.
-        </p>
-        <p class="govuk-body">
-          <a class="govuk-link" href="#">
-            Read more about our guidance and standards
-          </a>
-        </p>
-      </div>
-
-    </div>
-
-      <!-- <div class="govuk-grid-column-one-third">
-        <aside class="related-items">
-          <h2 class="related-items__title">Related content</h2>
-          <ul class="related-items__list">
-            <li><a class="govuk-link" href="#">Documentation</a></li>
-            <li><a class="govuk-link" href="#">Citizen Services Architecture</a></li>
-          </ul>
-        </aside>
-      </div> -->
-
-    <section class="content-section content-section--with-top-border">
-      <div class="govuk-grid-row govuk-!-margin-bottom-4">
-        <div class="govuk-grid-column-full">
-          <h2 class="govuk-heading-l content-section__first-heading">Roadmap</h2>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <h3 class="govuk-heading-m content-section__first-heading">What we are working on</h3>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a class="govuk-link" href="/catalogue#documentation-configuration">Documentation and configuration repository</a></li>
-            <li><a class="govuk-link" href="/catalogue#api-management">API Management</a></li>
-            <li><a class="govuk-link" href="/catalogue#usage-tracking">Usage Tracking</a></li>
-          </ul>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <h3 class="govuk-heading-m content-section__first-heading">What we will work on next</h3>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a class="govuk-link" href="/catalogue#customer-identity">Customer Identity Hub</a></li>
-            <li><a class="govuk-link" href="/catalogue#employee-identity">Employee and System Identity Hub</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
   </div>
 </main>
