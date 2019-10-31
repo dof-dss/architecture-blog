@@ -1,6 +1,6 @@
 ---
 applications:
-- name: architecture-team
+- name: architecture-blog
   memory: 64M
   instances: 1
   path: ./build
