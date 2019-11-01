@@ -1,9 +1,10 @@
 ---
-title: Architecture team demonstrates use of GitHub as shared repository
+title: Using GitHub as shared repository
 author: Architecture Team
 date: 2019/10/10
 category: information
 image: /images/blogs/2019-10-10-github.png
+image_alt: Screenshot of DSS GitHub page
 ---
 
 At a meeting of the NICS Technical Design Group, members of the DSS Enterprise and Solution Architecture Team showed how GitHub can be used to store both code and the documentation that should accompany it.

@@ -2,6 +2,6 @@
 applications:
 - name: architecture-blog
   memory: 64M
-  instances: 1
+  instances: 2
   path: ./build
   buildpack: staticfile_buildpack

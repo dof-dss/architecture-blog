@@ -25,7 +25,7 @@ title: Digital Shared Services
             </h2>
 
             <section class="content-section">
-              <img src="<%= article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4">
+              <img src="<%= article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4" alt="<%= article.data.image_alt %>">
             </section>
 
             <div class="govuk-body">
@@ -47,21 +47,6 @@ title: Digital Shared Services
         <% end %>
       </div>
       <div class="govuk-grid-column-one-third govuk-!-padding-left-3">
-        <!--
-        <h1 class="govuk-heading-l">Tags</h1>
-        <ul>
-          <% blog.tags.each do |tag, articles| %>
-            <li>
-              <h5><%= tag %></h5>
-              <ul>
-                <% articles.each do |article| %>
-                  <li><a href="<%= article.url %>"><%= article.title %></a></li>
-                <% end %>
-              </ul>
-            </li>
-          <% end %>
-        </ul>
-        -->
         <aside class="related-items">
           <h2 class="related-items__title">Digital Shared Services</h2>
           <p class="govuk-body">
@@ -74,7 +59,7 @@ title: Digital Shared Services
           </p>
 
           <p class="govuk-body">
-            <a class="govuk-link" href="https://www.finance-ni.gov.uk/topics/digital-and-communication-services/digital-shared-services">Find out more</a>
+            <a class="govuk-link" href="https://www.finance-ni.gov.uk/topics/digital-and-communication-services/digital-shared-services">Find out more about DSS</a>
           </p>
         </aside>
 
@@ -117,5 +102,7 @@ title: Digital Shared Services
             For a quick overview visit the <a class="govuk-link" href="https://www.digit21.co.uk">2019 conference webstite</a> and see who you can recognise in the gallery!
           </p>
         </aside>
+      </div>
+    </div>
   </div>
 </main>
