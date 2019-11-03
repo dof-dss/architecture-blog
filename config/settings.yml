@@ -10,3 +10,6 @@ header_links:
 
 # Blog title
 blog_title: Enterprise and Solution Architecture Team
+
+# breadcrumb root
+blog_root: Architecture Team Blog
