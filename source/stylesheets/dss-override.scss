@@ -1,5 +1,6 @@
-/*need to override the GDS Transport font*/
-
+/* override the GDS Transport font */
+$govuk-font-family: "Lato", "Open Sans", sans-serif;
+$govuk-font-family-tabular: "Lato", "Open Sans", sans-serif;
 
 /*colours specific to NICS*/
 $nics-brand-colour: #0a7ad0;
