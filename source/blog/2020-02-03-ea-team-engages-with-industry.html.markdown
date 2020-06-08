@@ -26,7 +26,7 @@ A vision of the future was described and discussed.
 A breakout session was run in which participants split into 3 groups to discuss and then report back on:
 
 1. The EA Team's proposed architecture portal and catalogue
-2. Supplier experience with the Analytics
+2. Supplier experience with the NICS
 3. The potential benefits of an Enterprise Architecture approach
 
 ### Feedback
