@@ -4,6 +4,8 @@ author: Architecture Team
 date: 2020-07-01
 category: "product launch"
 published: false
+image: /images/blogs/2020-06-17-aws-api-gateway.png
+image_alt: Diagram Amazon Web Services API Gateway
 ---
 
 Today the team launched the API Gateway.
