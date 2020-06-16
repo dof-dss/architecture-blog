@@ -3,7 +3,6 @@ title: EA Team promotes the use of GOV.UK PaaS
 author: Architecture Team
 date: 2020-06-11
 category: information
-published: false
 image: /images/blogs/2020-06-11-govuk-paas.png
 image_alt: Image of GOV.UK Platform as a Service product page
 ---
