@@ -1,0 +1,14 @@
+<% if paginate %>
+
+  <p class="govuk-body">
+    Blogs <%= page_start %> to <%= page_end %> of <%= articles.length %>
+  </p>
+  <% if prev_page %>
+    <p class="pagination-link govuk-link"><%= link_to '<< Previous page', prev_page %></p>
+  <% end %>
+
+  <% if next_page %>
+    <p class="pagination-link govuk-link"><%= link_to 'Next page >>', next_page %></p>
+  <% end %>
+
+<% end %>

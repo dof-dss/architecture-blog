@@ -23,6 +23,7 @@ $govuk-assets-path: "/assets/govuk/assets/";
 @import "modules/sub-navigation";
 
 @import "dss-override";
+@import "pagination";
 
 // scss-lint:disable IdSelector
 #main-content {

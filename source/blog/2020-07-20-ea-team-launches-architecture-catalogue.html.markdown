@@ -1,7 +1,7 @@
 ---
 title: EA Team launches Architecture Catalogue
 author: Architecture Team
-date: 2020-06-12
+date: 2020-07-20
 category: "product launch"
 published: false
 image: /images/blogs/2020-06-12-catalogue.png

@@ -75,6 +75,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = "blog"
   blog.permalink = "{category}/{title}.html"
+  blog.paginate = true
 end
 
 # Read in the list of links for the header from the YAML file
