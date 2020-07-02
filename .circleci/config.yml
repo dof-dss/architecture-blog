@@ -94,6 +94,9 @@ commands:
     steps:
       - checkout
       - ruby/bundle-install
+      - run:
+          command: |
+            bundle install
       - install_node_components_cmd
       - middleman_build_cmd
       - install_cf_cli_cmd
