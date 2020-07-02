@@ -67,7 +67,7 @@ commands:
       - run:
           command: |
             # start the application
-            cf start "${<< parameters.application >>}"
+            cf start "<< parameters.application >>"
 
   push_zdt_cmd:
     description: "Zero downtime deployment"
@@ -78,7 +78,7 @@ commands:
       - run:
           command: |
             # create the application
-            cf v3-create-app $"{<< parameters.application >>}"
+            cf v3-create-app $<< parameters.application >>"
             # apply the manifest file to the application
             cf v3-apply-manifest -f "${CF_MANIFEST_FILE}"
       - set_env_cmd:
@@ -87,7 +87,7 @@ commands:
       - run:
           command: |
             # push a zero downtime version of the application
-            cf v3-zdt-push "${<< parameters.application >>}" --wait-for-deploy-complete
+            cf v3-zdt-push "<< parameters.application >>" --wait-for-deploy-complete
 
   build_cmd:
     description: "Install the application"
