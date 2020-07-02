@@ -93,7 +93,6 @@ commands:
     description: "Install the application"
     steps:
       - checkout
-      - ruby/bundle-install
       - run:
           command: |
             gem install bundler:2.1.4
