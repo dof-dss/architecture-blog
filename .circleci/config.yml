@@ -93,7 +93,6 @@ commands:
     description: "Install the application"
     steps:
       - checkout
-      - ruby/bundle-install
       - run:
           command: |
             gem install bundler:2.1.4
@@ -108,6 +107,8 @@ jobs:
   build_and_deploy_job:
     docker:
       - image: circleci/ruby:2.6.3-stretch-node
+        environment:
+          BUNDLER_VERSION: 2.1.4
     executor: ruby/default
     steps:
       - build_cmd
