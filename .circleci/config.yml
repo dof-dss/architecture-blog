@@ -96,6 +96,7 @@ commands:
       - ruby/bundle-install
       - run:
           command: |
+            gem install bundler:2.1.4
             bundle install
       - install_node_components_cmd
       - middleman_build_cmd
