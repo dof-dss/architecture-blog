@@ -1,0 +1,121 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2
+
+commands:
+  install_cf_cli_cmd:
+    description: "Install Cloud Foundry CLI"
+    steps:
+      - run:
+          command: |
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb
+            cf -v
+            cf api https://api.london.cloud.service.gov.uk
+            cf auth "$CF_USERNAME" "$CF_PASSWORD"
+            cf target -o "$CF_ORG" -s "$CF_SPACE"
+
+  install_node_components_cmd:
+    description: "Install Node components"
+    steps:
+      - restore_cache:
+          keys:
+            - node-v1-{{ checksum "package.json" }}
+            - node-v1-
+      - run: npm install
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  middleman_build_cmd:
+    description: "Build middleman assets"
+    steps:
+      - run:
+          command: |
+            bundle exec middleman build
+
+  set_env_cmd:
+    description: "Set environment variables"
+    parameters:
+      application:
+        type: string
+    steps:
+      - run:
+          command: |
+            # CiricleCI environment varialbes
+            cf set-env "${<< parameters.application >>}" CIRCLE_BUILD_NUM "${CIRCLE_BUILD_NUM}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_SHA1 "${CIRCLE_SHA1}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_WORKFLOW_ID "${CIRCLE_WORKFLOW_ID}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_PROJECT_USERNAME "${CIRCLE_PROJECT_USERNAME}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_PROJECT_REPONAME "${CIRCLE_PROJECT_REPONAME}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_BRANCH "${CIRCLE_BRANCH}"
+            cf set-env "${<< parameters.application >>}" CIRCLE_PULL_REQUEST "${CIRCLE_PULL_REQUEST}"
+
+  push_cmd:
+    description: "Standard deployment"
+    parameters:
+      application:
+        type: string
+    steps:
+      - run:
+          command: |
+            # build the application but don't start it
+            cf push --no-start -f "${CF_MANIFEST_FILE}"
+      - set_env_cmd:
+          application: "<< parameters.application >>"
+      - run:
+          command: |
+            # start the application
+            cf start "${<< parameters.application >>}"
+
+  push_zdt_cmd:
+    description: "Zero downtime deployment"
+    parameters:
+      application:
+        type: string
+    steps:
+      - run:
+          command: |
+            # create the application
+            cf v3-create-app $"{<< parameters.application >>}"
+            # apply the manifest file to the application
+            cf v3-apply-manifest -f "${CF_MANIFEST_FILE}"
+      - set_env_cmd:
+          application: "<< parameters.application >>"
+
+      - run:
+          command: |
+            # push a zero downtime version of the application
+            cf v3-zdt-push "${<< parameters.application >>}" --wait-for-deploy-complete
+
+  build_cmd:
+    description: "Install the application"
+    steps:
+      - checkout
+      - ruby/bundle-install
+      - install_node_components_cmd
+      - middleman_build_cmd
+      - install_cf_cli_cmd
+      - push_zdt_cmd:
+          application: architecture-blog
+
+jobs:
+  build_and_deploy_job:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+    executor: ruby/default
+    steps:
+      - build_cmd
+
+workflows:
+  deploy-to-govuk:
+    jobs:
+      - build_and_deploy_job:
+          filters:    # all tags and master branch only
+            tags:
+              only: /.*/
+            branches:
+              only:
+                - /master/
+          context: govuk-paas-production
