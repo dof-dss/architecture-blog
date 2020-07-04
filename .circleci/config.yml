@@ -78,7 +78,7 @@ commands:
       - run:
           command: |
             # create the application
-            cf v3-create-app << parameters.application >>"
+            cf v3-create-app << parameters.application >>
             # apply the manifest file to the application
             cf v3-apply-manifest -f "${CF_MANIFEST_FILE}"
       - set_env_cmd:

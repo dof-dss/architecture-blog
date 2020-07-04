@@ -76,6 +76,14 @@ activate :blog do |blog|
   blog.layout = "blog"
   blog.permalink = "{category}/{title}.html"
   blog.paginate = true
+  blog.calendar_template = "calendar.html"
+  blog.tag_template = "tag.html"
+  blog.custom_collections = {
+    category: {
+      link: '/categories/{category}.html',
+      template: '/category.html'
+    }
+  }
 end
 
 # Read in the list of links for the header from the YAML file

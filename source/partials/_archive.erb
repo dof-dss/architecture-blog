@@ -1,0 +1,21 @@
+<aside class="related-items">
+  <h2 class="related-items__title">Blog archive</h2>
+  <ul class="govuk-list">
+    <% blog.articles.group_by {|y| y.date.year }.each do |year, articles| %>
+      <li>
+        <a href="<%= blog_year_path(year) %>" class="govuk-link">
+          <%= year %>
+        </a>
+        <ul>
+          <% articles.group_by {|a| a.date.month}.each do |month, month_articles| %>
+            <li>
+              <a href="<%= blog_month_path(year, month) %>" class="govuk-link">
+                <%= month_articles.first.date.strftime("%B") %>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+</aside>

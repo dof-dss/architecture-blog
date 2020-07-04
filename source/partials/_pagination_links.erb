@@ -4,11 +4,11 @@
     Blogs <%= page_start %> to <%= page_end %> of <%= articles.length %>
   </p>
   <% if prev_page %>
-    <p class="pagination-link govuk-link"><%= link_to '<< Previous page', prev_page %></p>
+    <p class="pagination-link"><a href="<%= url_for(prev_page) %>" class="govuk-link">&lt;&lt; Previous page</a></p>
   <% end %>
 
   <% if next_page %>
-    <p class="pagination-link govuk-link"><%= link_to 'Next page >>', next_page %></p>
+    <p class="pagination-link"><a href="<%= url_for(next_page) %>" class="govuk-link">Next page &gt;&gt;</a></p>
   <% end %>
 
 <% end %>

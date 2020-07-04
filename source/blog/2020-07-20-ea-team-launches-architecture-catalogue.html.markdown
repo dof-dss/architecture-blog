@@ -3,6 +3,7 @@ title: EA Team launches Architecture Catalogue
 author: Architecture Team
 date: 2020-07-20
 category: "product launch"
+tags: application
 published: false
 image: /images/blogs/2020-06-12-catalogue.png
 image_alt: Screen shot image of architecture catalogue
@@ -12,9 +13,9 @@ Today the team launched the Architecture Catalogue. The catalogue contains all o
 
 The catalogue enables you to:
 
-- [View components that are part of the existing architecture](#view-components-that-are-part-of-the-existing-nics-architecture)
-- [Update the architecture](#update-the-architecture-as-new-solutions-are-developed)
-- [Plan changes based on component roadmaps](#plan-changes-based-on-component-roadmaps)
+- [View components that are part of the existing architecture](#view-components-that-are-part-of-the-existing-nics-architecture){:class="govuk-link"}
+- [Update the architecture](#update-the-architecture-as-new-solutions-are-developed){:class="govuk-link"}
+- [Plan changes based on component roadmaps](#plan-changes-based-on-component-roadmaps){:class="govuk-link"}
 
 ### View components that are part of the existing NICS architecture
 
@@ -27,7 +28,3 @@ Solution designers can update the catalogue when new technologies are employed (
 ### Plan changes based on component roadmaps
 
 Components have a status associated with them that indicates which stage they are at in their lifecycle. Components will progress through a number of status changes during their lifetime: evaluating, approved, retiring, unapproved and prohibited. Therefore by looking at the status of all the components in a solution it should be possible to plan the changes required to keep a solution in a fully supported and approved state.
-
-### More information
-
-[Architecture Catalogue Product Page](https://github.com/dof-dss)

@@ -1,8 +1,7 @@
 /*colours specific to NICS*/
-$nics-brand-colour: #0a7ad0;
+$nics-brand-colour: #0D1925;
 $nics-grey: #e6e6e6;
 $nics-service-name-color: #0869b3;
-$nics-highligh-color: #085d9f;
 
 /*Customisation of the layout page*/
 
@@ -20,61 +19,13 @@ $nics-highligh-color: #085d9f;
     color: #fff;
 
     &__container {
-        border-bottom-color: $nics-grey;
+        border-bottom-color: govuk-colour("mid-grey");
     }
 
     &__link {
-
         &:visited,
         &:link {
-            padding: 10px;
-        }
-    }
-}
-
-/*Customise the header nav links*/
-.govuk-header {
-    &__navigation-item {
-        &--active {
-            a {
-
-                &:link,
-                &:hover,
-                &:visited {
-                    color: White;
-                    background: $nics-highligh-color;
-                }
-            }
-        }
-    }
-
-    &__logotype-crown {
-        margin-left: -41px;
-    }
-
-    &__link {
-        box-shadow: none !important;
-
-        &:focus {
-            background-color: $nics-highligh-color;
-            color: white;
-            border: none;
-        }
-    }
-
-    &__product-name {
-        width: 100%;
-    }
-
-    &__menu-button {
-        padding: 10px 5px;
-        top: 15px;
-        box-shadow: none !important;
-        &:link,
-        &:hover,
-        &:visited {
-            color: White;
-            background: $nics-highligh-color;
+            padding: 0px;
         }
     }
 }
@@ -138,41 +89,14 @@ $nics-highligh-color: #085d9f;
 
 .hero-alternative-action {
     color: rgb(32, 32, 32);
-
     a {
         color: $nics-service-name-color !important;
         font-weight: normal !important;
     }
 }
 
-.govuk-link {
-    font-size: 18px;
-}
-
-.govuk-link,
-.govuk-breadcrumbs__link {
-    box-shadow: none !important;
-
-    &:focus {
-        background-color: $nics-highligh-color;
-        color: white !important;
-        border: none;
-    }
-}
-
 .related-items {
     border-top-color: $nics-brand-colour !important;
-}
-
-.govuk-button {
-    background-color: $nics-brand-colour !important;
-    color: white !important;
-    box-shadow: none !important;
-
-    &:focus {
-        border-color: $nics-highligh-color !important;
-        background-color: $nics-highligh-color !important;
-    }
 }
 
 @media (min-width: 48.0625em) {
@@ -182,7 +106,6 @@ $nics-highligh-color: #085d9f;
             margin-right: 5px;
             padding: 5px 0;
             border: 0;
-
             a {
                 margin: 10px;
             }

@@ -6,11 +6,7 @@
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
-    <header class="govuk-header" role="banner" data-module="govuk-header">
-      <div class="govuk-header__container govuk-width-container">
-        <%= partial "partials/header_main_content" %>
-      </div>
-    </header>
+    <%= partial "partials/header" %>
 
     <div class="govuk-width-container product-page-!-border-bottom">
       <div class="govuk-breadcrumbs">
@@ -30,28 +26,23 @@
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-two-thirds">
             <%= partial "partials/blog_title" %>
-          </div>
-        </div>
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
             <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-            <h2 class="govuk-heading-l">
+            <h2 class="govuk-heading-l govuk-!-margin-bottom-1">
               <%= current_article.title %>
             </h2>
+            <div class="govuk-body">
+              <span class="govuk-visually-hidden">Posted on: </span>
+              <time>
+                <span class="posted-on"><%= current_article.date.strftime('%d %B %Y') %></span>
+              </time>
+              -
+              <span class="govuk-visually-hidden">Category: </span>
+              <a href="<%= category_path(current_article.data.category) %>" class="govuk-link"><%= current_article.data.category %></a>
+            </div>
             <article>
               <section class="content-section">
                 <img src="<%= current_article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4" style="opacity: 0.7">
               </section>
-
-              <div class="govuk-body">
-                <span class="govuk-visually-hidden">Posted on: </span>
-                <time>
-                  <span class="posted-on"><%= current_article.date.strftime('%d %B %Y') %></span>
-                </time>
-                -
-                <span class="govuk-visually-hidden">Category: </span>
-                <%= current_article.data.category %>
-              </div>
 
               <div class="govuk-body">
                 <%= current_article.body %>
@@ -59,16 +50,9 @@
             </article>
           </div>
           <div class="govuk-grid-column-one-third">
-            <aside class="related-items">
-              <h2 class="related-items__title">Most recent posts</h2>
-              <ul class="related-items__list">
-                <% blog.articles[0...5].each do |article| %>
-                  <li>
-                    <a href="<%= article.url %>" class="govuk-link"><%= article.title %></a>
-                  </li>
-                <% end %>
-              </ul>
-            </aside>
+            <%= partial "partials/categories" %>
+            <%= partial "partials/tags" %>
+            <%= partial "partials/archive" %>
           </div>
         </div>
       </div>

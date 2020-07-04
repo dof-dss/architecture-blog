@@ -1,0 +1,10 @@
+<aside class="related-items">
+  <h2 class="related-items__title">Tags</h2>
+  <ul class="govuk-list">
+    <% blog.tags.each do |tag, articles| %>
+      <li>
+        <a href="<%= tag_path(tag) %>" class="govuk-link"><%= tag  %> (<%= articles.size %>)</a>
+      </li>
+    <% end %>
+  </ul>
+</aside>

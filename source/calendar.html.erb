@@ -1,0 +1,68 @@
+---
+title: Blog archive
+pageable: true
+---
+
+<div class="govuk-width-container product-page-!-border-bottom">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        <a class="govuk-breadcrumbs__link" href="/"><%= config[:settings]["blog_root"] %></a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        <a class="govuk-breadcrumbs__list-item">Archive for&nbsp;
+          <% case page_type
+             when 'day' %>
+            <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+          <% when 'month' %>
+            <%= Date.new(year, month, 1).strftime('%b %Y') %>
+          <% when 'year' %>
+            <%= year %>
+          <% end %>
+        </a>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<main class="govuk-main-wrapper" id="main-content" role="main">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Archive for
+          <% case page_type
+             when 'day' %>
+            <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+          <% when 'month' %>
+            <%= Date.new(year, month, 1).strftime('%B %Y') %>
+          <% when 'year' %>
+            <%= year %>
+          <% end %>
+        </h1>
+
+        <% if paginate && num_pages > 1 %>
+          <p>Page <%= page_number %> of <%= num_pages %></p>
+
+          <% if prev_page %>
+            <p><%= link_to 'Previous page', prev_page %></p>
+          <% end %>
+        <% end %>
+
+        <ul class="govuk-list">
+          <% page_articles.each_with_index do |article, i| %>
+            <li>
+                <a href="<%= url_for(article) %>" class="govuk-link">
+                  <%= article.title %> (<%= article.date.strftime('%e %B') %>)
+                </a>
+            </li>
+          <% end %>
+        </ul>
+
+        <%= partial "partials/pagination_links" %>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <%= partial "partials/archive" %>
+      </div>
+    </div>
+  </div>
+</main>

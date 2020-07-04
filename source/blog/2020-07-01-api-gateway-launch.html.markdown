@@ -3,6 +3,7 @@ title: EA Team launches API Gateway
 author: Architecture Team
 date: 2020-07-01
 category: "product launch"
+tags: api
 image: /images/blogs/2020-06-17-aws-api-gateway.png
 image_alt: Diagram Amazon Web Services API Gateway
 ---
@@ -11,7 +12,7 @@ image_alt: Diagram Amazon Web Services API Gateway
 
 Today the team launched the DSS API Gateway. The API Gateway makes it easy for developers to create, publish, maintain, monitor and secure APIs at any scale. API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorisation and access control, throttling, monitoring, and API version management.
 
-We have chosen the [AWS API Gateway](https://aws.amazon.com/api-gateway) as our API management platform for the next two years.
+We have chosen the [AWS API Gateway](https://aws.amazon.com/api-gateway){:class="govuk-link"} as our API management platform for the next two years.
 
 An API Gateway makes it easier for client side applications that need to access multiple individual services.  Instead, a client can send a single request to the API gateway, which will itself call the services. This primary function of the API gateway is known as routing, but there are plenty more reasons to use an API gateway.
 
@@ -32,4 +33,4 @@ Since the API gateway sits between front end applications and the back end servi
 
 ### More information
 
-A [Developer Portal](https://developer-portal.digitalni.gov.uk) has been created that allows developers to discover and view our reusable APIs and onboard new APIs.  
+A [Developer Portal](https://developer-portal.digitalni.gov.uk){:class="govuk-link"} has been created that allows developers to discover and view our reusable APIs and onboard new APIs.  

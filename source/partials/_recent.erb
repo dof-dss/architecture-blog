@@ -1,0 +1,10 @@
+<aside class="related-items">
+  <h2 class="related-items__title">Most recent blog posts</h2>
+  <ul class="govuk-list">
+    <% blog.articles[0...4].each do |article| %>
+      <li>
+        <a href="<%= article.url %>" class="govuk-link"><%= article.title %></a>
+      </li>
+    <% end %>
+  </ul>
+</aside>

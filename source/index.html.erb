@@ -1,6 +1,6 @@
 ---
 title: Digital Shared Services
-per_page: 5
+per_page: 10
 pageable: true
 ---
 
@@ -22,23 +22,24 @@ pageable: true
         <% page_articles.each do |article| %>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
           <article>
-            <h2 class="govuk-heading-m">
-              <a href="<%= article.url %>"><%= article.title %></a>
+            <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+              <a href="<%= article.url %>" class="govuk-link"><%= article.title %></a>
             </h2>
+            <div class="govuk-body">
+              <span class="govuk-visually-hidden">Posted on: </span>
+              <time>
+                <span class="posted-on">
+                  <%= article.date.strftime('%d %B %Y') %>
+                </span>
+              </time>
+              -
+              <span class="govuk-visually-hidden">Category: </span>
+              <a href="<%= category_path(article.data.category) %>" class="govuk-link"><%= article.data.category %></a>
+            </div>
 
             <section class="content-section">
               <img src="<%= article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4" style="opacity: 0.7" alt="<%= article.data.image_alt %>">
             </section>
-
-            <div class="govuk-body">
-              <span class="govuk-visually-hidden">Posted on: </span>
-              <time>
-                <span class="posted-on"><%= article.date.strftime('%d %B %Y') %></span>
-              </time>
-              -
-              <span class="govuk-visually-hidden">Category: </span>
-              <%= article.data.category %>
-            </div>
 
             <div class="govuk-body">
               <%= article.summary %>
@@ -51,6 +52,12 @@ pageable: true
         <%= partial "partials/pagination_links" %>
       </div>
       <div class="govuk-grid-column-one-third govuk-!-padding-left-3">
+        <%= partial "partials/recent" %>
+
+        <%= partial "partials/categories" %>
+
+        <%= partial "partials/tags" %>
+
         <aside class="related-items">
           <h2 class="related-items__title">Digital Shared Services</h2>
           <p class="govuk-body">
@@ -106,6 +113,8 @@ pageable: true
             For a quick overview visit the <a class="govuk-link" href="https://www.digit21.co.uk">2019 conference webstite</a> and see who you can recognise in the gallery!
           </p>
         </aside>
+
+        <%= partial "partials/archive" %>
       </div>
     </div>
   </div>

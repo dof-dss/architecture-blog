@@ -1,0 +1,11 @@
+<aside class="related-items">
+  <h2 class="related-items__title">Blog categories</h2>
+  <ul class="govuk-list">
+    <% blog.articles.group_by {|c|  c.data.category }.each do |category, articles| %>
+      <li>
+        <a href="<%= category_path(category) %>" class="govuk-link"><%= category  %> (<%= articles.size %>)</a>
+      </li>
+
+    <% end %>
+  </ul>
+</aside>

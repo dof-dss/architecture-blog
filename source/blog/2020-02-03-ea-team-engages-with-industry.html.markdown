@@ -3,6 +3,7 @@ title: EA Team engages with NICS suppliers
 author: Architecture Team
 date: 2020-02-03
 category: information
+tags: enterprise architecture
 image: /images/blogs/2020-02-03-workshop.png
 image_alt: Image of slide from presentation given to suppliers
 ---

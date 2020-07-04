@@ -3,11 +3,12 @@ title: EA Team promotes the use of GOV.UK PaaS
 author: Architecture Team
 date: 2020-06-11
 category: information
+tags: platform, paas
 image: /images/blogs/2020-06-11-govuk-paas.png
 image_alt: Image of GOV.UK Platform as a Service product page
 ---
 
-Today the Enterprise Architecture Team proposed the use of [GOV.UK PaaS](https://www.cloud.service.gov.uk) as its preferred application hosting environment to the NICS Innovation and Technical Design Authority.
+Today the Enterprise Architecture Team proposed the use of [GOV.UK PaaS](https://www.cloud.service.gov.uk){:class="govuk-link"} as its preferred application hosting environment to the NICS Innovation and Technical Design Authority.
 
 The team talked about the benefits of using GOV.UK PaaS as a versatile, robust, scalable and secure application hosting platform.
 

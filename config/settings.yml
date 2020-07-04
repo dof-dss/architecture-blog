@@ -4,12 +4,13 @@ team_name: Enterprise and Solution Architecture
 
 # Links to show on right-hand-side of header
 header_links:
-  NICS EA Principles: https://principles.ea.digitalni.gov.uk
+  EA Principles: https://principles.ea.digitalni.gov.uk
   #Citizen Services Architecture: https://docs.ea.digitalni.gov.uk
-  GitHub: https://github.com/dof-dss/architecture-blog
+  Developer Portal: https://developer-portal.digitalni.gov.uk
+  nidirect: https://nidirect.gov.uk
 
 # Blog title
-blog_title: Enterprise and Solution Architecture Team
+blog_title: Enterprise Architecture
 
 # breadcrumb root
-blog_root: Architecture Team Blog
+blog_root: Blogs
