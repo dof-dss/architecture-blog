@@ -100,7 +100,7 @@ commands:
       - install_node_components_cmd
       - middleman_build_cmd
       - install_cf_cli_cmd
-      - push_zdt_cmd:
+      - push_cmd:
           application: architecture-blog
 
 jobs:
