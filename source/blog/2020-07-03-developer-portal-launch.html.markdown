@@ -10,7 +10,7 @@ image_alt: Screenshot of API developer portal
 
 ### Find the APIs you need to build your next great service
 
-Today the team launched the [API Developer Portal](https://developer-portal.digitalni.gov.uk){:class="govuk-link"}. The portal provides a list of reusable APIs to help you build services for the NICS. You can browse the list of currently available APIs and see each API's supporting documentation.
+Today the team launched the [API Developer Portal](https://developer-portal.digitalni.gov.uk){:class="govuk-link"} in **private beta**. The portal provides a list of reusable APIs to help you build services for the NICS. You can browse the list of currently available APIs and see each API's supporting documentation.
 
 In order to access the list of available APIs you will need to create an account with us. Your information is stored purely for the purposes of controlling access to this resource; it will not be used for any other purpose.
 
