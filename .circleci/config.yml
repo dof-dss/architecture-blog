@@ -61,7 +61,7 @@ commands:
       - run:
           command: |
             # build the application but don't start it
-            cf push --no-start -f "${CF_MANIFEST_FILE}"
+            cf push --no-start
       - set_env_cmd:
           application: "<< parameters.application >>"
       - run:
