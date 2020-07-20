@@ -5,7 +5,7 @@ date: 2020-07-20
 category: "product launch"
 tags: application
 published: false
-image: /images/blogs/2020-06-12-catalogue.png
+image: /images/blogs/2020-07-20-catalogue.png
 image_alt: Screen shot image of architecture catalogue
 ---
 
