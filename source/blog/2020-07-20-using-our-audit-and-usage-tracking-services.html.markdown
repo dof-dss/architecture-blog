@@ -1,6 +1,6 @@
 ---
 title: How to use our Audit and Usage Tracking Services
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-07-20 09:00
 category: "information"
 tags: application

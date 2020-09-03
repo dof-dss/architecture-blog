@@ -1,6 +1,6 @@
 ---
 title: EA Team promotes the use of GOV.UK PaaS
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-06-11
 category: information
 tags: platform, paas

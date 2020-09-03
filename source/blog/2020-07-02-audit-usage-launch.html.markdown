@@ -1,6 +1,6 @@
 ---
 title: EA Team launches audit and usage tracking services
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-07-02
 category: "product launch"
 tags: service

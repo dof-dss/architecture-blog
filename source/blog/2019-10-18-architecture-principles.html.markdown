@@ -1,6 +1,6 @@
 ---
 title: NICS publishes Enterprise Architecture Principles
-author: Architecture Team
+author: Stephen Patterson
 date: 2019/10/18
 category: publication
 tags: enterprise architecture

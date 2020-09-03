@@ -1,6 +1,6 @@
 ---
 title: Strategically Evolving NICS architecture
-author: Architecture Team
+author: Adrian Lester
 date: 2020-06-22
 category: strategy
 tags: enterprise architecture

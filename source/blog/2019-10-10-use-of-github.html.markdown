@@ -1,6 +1,6 @@
 ---
 title: Using GitHub as shared repository
-author: Architecture Team
+author: Stephen Patterson
 date: 2019/10/10
 category: information
 tags: application

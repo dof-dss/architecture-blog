@@ -1,6 +1,6 @@
 ---
 title: EA Team engages with NICS suppliers
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-02-03
 category: information
 tags: enterprise architecture

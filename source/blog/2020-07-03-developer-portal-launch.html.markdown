@@ -1,6 +1,6 @@
 ---
 title: EA Team launches API developer portal
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-07-03
 category: "product launch"
 tags: application, api

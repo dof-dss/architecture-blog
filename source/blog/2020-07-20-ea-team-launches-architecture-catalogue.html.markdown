@@ -1,6 +1,6 @@
 ---
 title: EA Team launches Architecture Catalogue
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-07-20 11:00
 category: "product launch"
 tags: application

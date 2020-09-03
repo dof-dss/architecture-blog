@@ -1,6 +1,6 @@
 ---
 title: EA Team launches API Gateway
-author: Architecture Team
+author: Stephen Patterson
 date: 2020-07-01
 category: "product launch"
 tags: api
