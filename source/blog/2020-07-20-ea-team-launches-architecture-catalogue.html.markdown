@@ -12,9 +12,9 @@ Today the team launched the Architecture Catalogue in **private beta**. The cata
 
 The catalogue enables you to:
 
-- [View components that are part of the existing architecture](/blog/product-launch/ea-team-launches-architecture-catalogue/#view-components-that-are-part-of-the-existing-nics-architecture){:class="govuk-link"}
-- [Update the architecture](/blog/product-launch/ea-team-launches-architecture-catalogue/#update-the-architecture-as-new-solutions-are-developed){:class="govuk-link"}
-- [Plan changes based on component roadmaps](/blog/product-launch/ea-team-launches-architecture-catalogue/#plan-changes-based-on-component-roadmaps){:class="govuk-link"}
+- View components that are part of the existing architecture
+- Update the architecture
+- Plan changes based on component roadmaps
 
 ### View components that are part of the existing NICS architecture
 
