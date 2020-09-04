@@ -14,5 +14,5 @@ These principles will be used to guide the NICS when making decisions regarding 
 
 An [HTML version of the document][2]{:class="govuk-link"} is also available.
 
-[1]: https://www.finance-ni.gov.uk/sites/default/files/publications/dfp/NICS%20Enterprise%20Architecture%20Principles%20-%20ITDA.PDF
-[2]: https://nics-ea-principles.london.cloudapps.digital
+[1]: https://www.finance-ni.gov.uk/publications/nics-enterprise-architecture-principles-itda
+[2]: https://principles.ea.digitalni.gov.uk
