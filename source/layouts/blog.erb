@@ -8,19 +8,6 @@
 
     <%= partial "partials/header" %>
 
-    <div class="govuk-width-container product-page-!-border-bottom">
-      <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            <a class="govuk-breadcrumbs__link" href="/"><%= config[:settings]["blog_root"] %></a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            <a class="govuk-breadcrumbs__list-item"><%= current_article.title %></a>
-          </li>
-        </ol>
-      </div>
-    </div>
-
     <main class="govuk-main-wrapper" id="main-content" role="main">
       <div class="govuk-width-container">
         <div class="govuk-grid-row">

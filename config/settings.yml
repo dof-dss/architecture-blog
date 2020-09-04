@@ -9,8 +9,9 @@ header_links:
   Developer Portal: https://developer-portal.digitalni.gov.uk
   nidirect: https://nidirect.gov.uk
 
-# Blog title
+# Blog information
 blog_title: Enterprise Architecture
+blog_url: /
 
 # breadcrumb root
 blog_root: Blogs
