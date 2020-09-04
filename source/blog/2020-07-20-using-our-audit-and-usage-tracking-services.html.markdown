@@ -23,8 +23,9 @@ In this video we introduce you to the Audit and Usage Tracking Services.
     alt="YouTube video image 1"
     width="250"
   />
+  Audit and Usage Tracking - Part 1
 </a>
-[Audit and Usage Tracking - Part 1](https://youtu.be/vg8pEPdpSbQ){:class="govuk-link"}
+
 
 ### Audit and Usage Tracking - Part 2
 
@@ -37,7 +38,8 @@ In this video we show you how to integrate the Audit and Usage Tracking services
     alt="YouTube video image 2"
     width="250"
   />
+  Audit and Usage Tracking - Part 2
 </a>
-[Audit and Usage Tracking - Part 2](https://youtu.be/gcoqf4z4hn0){:class="govuk-link"}
+
 
 If you have any questions about the Audit or Usage Tracking services please contact the [EA Team](mailto://ea-team@ea.finance-ni.gov.uk){:class="govuk-link"}.
