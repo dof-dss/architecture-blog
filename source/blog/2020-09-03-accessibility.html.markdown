@@ -12,7 +12,7 @@ If I asked you to think about how you would make a building accessible, what wou
 
 Ramps, automatic doors…
 
-Most people think of these things because they take building accessibility to mean designed with wheelchair users in mind. However, what about people with visual impairments who would benefit from braille signage, or people with hearing difficulties who need a visual clue to an fire alarm going off?
+Most people think of these things because they take building accessibility to mean designed with wheelchair users in mind. However, what about people with visual impairments who would benefit from braille signage, or people with hearing difficulties who need a visual clue to a fire alarm going off?
 
 We need to have a more holistic view and look to make these things accessible to all; citizen services are no different.
 
