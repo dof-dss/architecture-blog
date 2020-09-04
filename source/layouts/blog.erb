@@ -33,7 +33,7 @@
             <div class="govuk-body">
               <span class="govuk-visually-hidden">Author: </span>
               <%= current_article.data.author %>
-              , 
+              ,
               <span class="govuk-visually-hidden">Posted on: </span>
               <time>
                 <span class="posted-on"><%= current_article.date.strftime('%d %B %Y') %></span>
@@ -44,7 +44,7 @@
             </div>
             <article>
               <section class="content-section">
-                <img src="<%= current_article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4" style="opacity: 0.7">
+                <img src="<%= current_article.data.image %>" class="image govuk-!-display-block govuk-!-margin-bottom-4" style="opacity: 0.7" alt="current_article.data.image_alt">
               </section>
 
               <div class="govuk-body">
