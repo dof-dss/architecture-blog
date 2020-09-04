@@ -25,7 +25,7 @@ Since the API gateway sits between front end applications and the back end servi
 
 #### Measurement and monitoring
 
-- **Metrics Collection**: Since all requests are funneled through the API gateway, it’s the ideal place to collect analytics. An API gateway can, for example, measure how many requests a user is making or how many requests are being relayed to a particular microservices. This also allows API gateways to be used for rate limiting: if a user is sending too many requests, the gateway can reject them instead of passing them on to one of the services.
+- **Metrics Collection**: Since all requests are funnelled through the API gateway, it’s the ideal place to collect analytics. An API gateway can, for example, measure how many requests a user is making or how many requests are being relayed to a particular microservices. This also allows API gateways to be used for rate limiting: if a user is sending too many requests, the gateway can reject them instead of passing them on to one of the services.
 
 #### Better support for end users
 
