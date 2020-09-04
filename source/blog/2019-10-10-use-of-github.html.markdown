@@ -12,7 +12,7 @@ At a meeting of the NICS Technical Design Group, members of the DSS Enterprise a
 
 Providing a repository in this way is very much driven by the NICS Enterprise Architecture principle:
 
-[Be open and use open source and open standards](https://nics-ea-principles.london.cloudapps.digital/documentation/general/#1-7-be-open-and-use-open-source-and-open-standards){:class="govuk-link"}.
+[Be open and use open source and open standards](https://principles.ea.digitalni.gov.uk/documentation/general/#1-7-be-open-and-use-open-source-and-open-standards){:class="govuk-link"}.
 
 A number of repository templates have been created to make storing your code and building your documentation really straight forward. If you need any help or assistance please contact the [DSS Enterprise and Solution Architecture Team](mailto:ea-team@ea.finance-ni.gov.uk){:class="govuk-link"}.
 
