@@ -10,7 +10,7 @@ image_alt: Screenshot of usage tracking service
 
 ### Get to your MVP faster and cheaper
 
-Today the team launched the Audit and Usage Tracking services in **private beta**. These are custom services that have been built by us, that are hosted in [GOV.UK PaaS](https://www.cloud.service.gov.uk){:class="govuk-link"} and that are accessible via our secure [API Gateway](/blog/product-launch/api-gateway-launch){:class="govuk-link"}.
+Today the team launched the Audit and Usage Tracking services in [private beta](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works){:class="govuk-link"}. These are custom services that have been built by us, that are hosted in [GOV.UK PaaS](https://www.cloud.service.gov.uk){:class="govuk-link"} and that are accessible via our secure [API Gateway](/blog/product-launch/api-gateway-launch){:class="govuk-link"}.
 
 These common services allow you to focus on designing and developing code that generates real business value for your customers. It also means you can get to your MVP faster and with reduced costs for development and ongoing support.
 

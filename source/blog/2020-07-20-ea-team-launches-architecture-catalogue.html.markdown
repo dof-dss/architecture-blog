@@ -8,7 +8,7 @@ image: /images/blogs/2020-07-20-catalogue.png
 image_alt: Screen shot image of architecture catalogue
 ---
 
-Today the team launched the Architecture Catalogue in **private beta**. The catalogue contains all of the solution building blocks (physical components) used by the NICS to build digital services for its customers.
+Today the team launched the Architecture Catalogue in [private beta](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works){:class="govuk-link"}. The catalogue contains all of the solution building blocks (physical components) used by the NICS to build digital services for its customers.
 
 The catalogue enables you to:
 
