@@ -5,7 +5,7 @@ date: 2019/10/18
 category: publication
 tags: enterprise architecture
 image: /images/blogs/2019-10-18-doc-cover.png
-image_alt: Image of cover of Architecture Principles document
+image_alt: Screenshot of the first page of the Architecture Principles document
 ---
 
 Today the Northern Ireland Civil Service (NICS) published a set of [Enterprise Architecture Principles][1]{:class="govuk-link"}.

@@ -1,18 +1,18 @@
 {
-  "name": "product-page-example",
+  "name": "dss-architecture-blog",
   "private": "true",
   "version": "1.0.0",
-  "description": "This is an example product page for use by GaaP products.",
+  "description": "This is the Digital Shared Services Architecture Blog",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alphagov/product-page-example.git"
+    "url": "git+https://github.com/dof-dss/architecture-blog.git"
   },
-  "author": "Government Digital Service developers",
+  "author": "Digital Shared Services developers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alphagov/product-page-example/issues"
+    "url": "https://github.com/dof-dss/architecture-blog/issues"
   },
-  "homepage": "https://github.com/alphagov/product-page-example#readme",
+  "homepage": "https://github.com/dof-dss/architecture-blog#readme",
   "dependencies": {
     "gaap-analytics": "^2.2.1",
     "govuk-frontend": "^3.8.1"

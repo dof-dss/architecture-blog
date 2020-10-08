@@ -5,7 +5,7 @@ date: 2020-02-03
 category: information
 tags: enterprise architecture
 image: /images/blogs/2020-02-03-workshop.png
-image_alt: Image of slide from presentation given to suppliers
+image_alt: Screenshot of the first slide of a presentation given to suppliers
 ---
 
 At a workshop on the 3rd February 2020, arranged by Noel Brady and hosted by Neueda, the DSS Enterprise Architecture Team presented to an audience of major ICT suppliers to the NICS. The agenda included:
