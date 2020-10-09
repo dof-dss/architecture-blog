@@ -43,4 +43,4 @@ When trying to get my head around these new regulations, I found the GOV.UK and 
 - [GOV.UK Accessibility Campaign](https://accessibility.campaign.gov.uk/){:class="govuk-link"} – aimed at a general audience
 - [GOV.UK WCAG 2.1 Primer](https://alphagov.github.io/wcag-primer){:class="govuk-link"} – aimed at developers
 - [GOV.UK Sample Accessibility Statement](https://www.gov.uk/government/publications/sample-accessibility-statement){:class="govuk-link"}
-- [Home Office ‘Designing for Accessibility’ posters](https://ukhomeoffice.github.io/accessibility-posters/posters/accessibility-posters.pdf){:class="govuk-link"}
+- [Home Office ‘Designing for Accessibility’ posters (opens a PDF document)](https://ukhomeoffice.github.io/accessibility-posters/posters/accessibility-posters.pdf){:class="govuk-link"}
