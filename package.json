@@ -15,6 +15,6 @@
   "homepage": "https://github.com/dof-dss/architecture-blog#readme",
   "dependencies": {
     "gaap-analytics": "^2.2.1",
-    "govuk-frontend": "^3.8.1"
+    "govuk-frontend": "^3.9.1"
   }
 }

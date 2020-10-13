@@ -9,6 +9,8 @@ $govuk-assets-path: "/assets/govuk/assets/";
 
 @import "govuk/all";
 
+@import "govuk/helpers/colour";
+
 @import "modules/borders";
 @import "modules/breadcrumbs";
 @import "modules/header";
@@ -21,6 +23,8 @@ $govuk-assets-path: "/assets/govuk/assets/";
 @import "modules/related-items";
 @import "modules/responsive-embed";
 @import "modules/sub-navigation";
+
+@import "modules/cookie-banner";
 
 @import "dss-override";
 @import "pagination";
