@@ -1,0 +1,39 @@
+---
+title: nidirect UXG replaces UXM
+author: Lee Goudie
+date: 2020/10/16
+category: information
+tags: accessibility, user experience
+image: /images/blogs/2020-10-16-uxg.png
+image_alt: Screenshot of the nidirect user experience guidance website
+---
+
+For a number of years now the nidirect User Experience Model (UXM) has been extoling the virtues of user-centred design and defining the public facing presentation layer of services built for nidirect.
+
+Due to the new [accessibility regulations][1]{:class="govuk-link"} we started planning a re-write of the UXM to bring it into line with those regulations.
+During that process, we reviewed the purpose of the UXM, why it was put in place, how we update it and the resource required to do so on an ongoing basis.
+
+The UXM predated the [GOV.UK Design System][2]{:class="govuk-link"} but shared its goal of giving the user a consistent look and feel for online services, and ensuring those services were built with users in mind.
+
+The GOV.UK Design System has now overtaken the nidirect UXM, and with their extensive resource, user research and knowledge, it became apparent that we could never keep pace.
+
+Instead of continuing to reinvent the wheel and play catch-up, we are advocating the use of GOV.UK Design System, albeit branded for nidirect.
+This brings me to introduce you to the successor to the nidirect UXM, the [nidirect User Experience Guide][3]{:class="govuk-link"} (UXG).
+
+The new guide is a more informational website with three key aims:
+
+- (still) extoling the virtues of user-centred design
+- outlining our usability testing service
+- advising how to apply the nidirect brand
+
+On that final point, to make it consistent and easy for developers to apply the nidirect brand to the GOV.UK front end we have created an [NPM package][4]{:class="govuk-link"} and instructions on how to implement that can be found within the UXG.
+
+The nidirect UXM will be decommissioned and people should now reference the new UXG and update any references to the UXM in documentation they may have.
+If you have any feedback about the new website, we would love to hear it.
+
+You can email us at [uxg-feedback@finance-ni.gov.uk](mailto://uxg-feedback@finance-ni.gov.uk){:class="govuk-link"}
+
+[1]: https://www.legislation.gov.uk/uksi/2018/952/contents/made
+[2]: https://design-system.service.gov.uk/
+[3]: https://uxg.nidirect.gov.uk/
+[4]: https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/
