@@ -1,9 +1,9 @@
-/*colours specific to NICS*/
-$nics-brand-colour: #0D1925;
-$nics-grey: #e6e6e6;
-$nics-service-name-color: #0869b3;
+/* colours specific to NICS */
+$nics-brand-colour: govuk-colour("black");
+$nics-grey: govuk-colour("mid-grey");
+$nics-service-name-color: govuk-colour("white");
 
-/*Customisation of the layout page*/
+/* Customisation of the layout page */
 
 .header__brand {
     polygon {
@@ -13,7 +13,7 @@ $nics-service-name-color: #0869b3;
     }
 }
 
-/*Style header as per uxm*/
+/* Style header as per uxm */
 .govuk-header {
     background: $nics-brand-colour;
     color: #fff;
@@ -30,46 +30,20 @@ $nics-service-name-color: #0869b3;
     }
 }
 
-@media (max-width: 823px) {
+@include govuk-media-query($from: tablet)
+@include govuk-media-query($until: tablet) {
     .govuk-header {
-        &__container {
-            min-height: 100px;
-        }
-
         &__logotype-crown {
-            margin-left: -20px !important;
+            display: none;
         }
 
         &__logotype-text {
-            margin-left: -10px !important;
-            position: absolute;
-            left: 40px;
-            top: 30px;
-            width: 80%;
             font-size: 0.7em;
-        }
-
-        &__logotype-text {
-            margin-left: -10px !important;
-            position: absolute;
-            left: 40px;
-            top: 24px;
-            width: 80%;
-            font-size: 0.7em;
-        }
-
-        &__product-name {
-            margin-left: -10px !important;
-            position: absolute;
-            left: 40px;
-            top: 45px;
-            width: 80%;
-            font-size: 0.5em;
         }
     }
 }
 
-/*Customise the product page jumbotron*/
+/* Customise the product page jumbotron */
 .masthead {
     background-color: $nics-grey;
     color: black !important;
@@ -99,7 +73,8 @@ $nics-service-name-color: #0869b3;
     border-top-color: $nics-brand-colour !important;
 }
 
-@media (min-width: 48.0625em) {
+@include govuk-media-query($from: mobile)
+@include govuk-media-query($until: mobile) {
     .govuk-header {
         &__navigation-item {
             display: inline-block;
