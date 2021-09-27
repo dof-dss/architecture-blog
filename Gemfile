@@ -15,5 +15,5 @@ gem "middleman-sprockets"
 gem "sprockets", "4.0.0.beta10"
 gem 'sassc'
 gem 'sass'
-gem 'nokogiri', '~> 1.10'
+gem 'nokogiri', '~> 1.12'
 gem "middleman-blog", "~>4.0"
