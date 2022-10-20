@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.4.3)
+    activesupport (5.2.8.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -25,8 +25,9 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.13.0)
-    haml (5.1.2)
-      temple (>= 0.8.0)
+    haml (6.0.7)
+      temple (>= 0.8.2)
+      thor
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
@@ -74,17 +75,18 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
-    middleman-livereload (3.4.6)
+    middleman-livereload (3.4.7)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
-    mini_portile2 (2.4.0)
-    minitest (5.14.1)
-    nokogiri (1.10.9)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.8.0)
+    minitest (5.16.3)
+    nokogiri (1.13.9)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -93,6 +95,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.19.1)
     public_suffix (4.0.5)
+    racc (1.6.0)
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
@@ -114,7 +117,7 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
@@ -127,7 +130,7 @@ DEPENDENCIES
   middleman-blog (~> 4.0)
   middleman-livereload
   middleman-sprockets
-  nokogiri (~> 1.10)
+  nokogiri (~> 1.13)
   sass
   sassc
   sprockets (= 4.0.0.beta10)
